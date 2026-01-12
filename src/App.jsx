@@ -6,6 +6,8 @@ import Jobs from "./components/Jobs";
 import Pinboard from "./pages/Pinboard";
 import About from "./pages/About";
 import AboutMe from "./pages/AboutMe";
+import AllJobs from "./pages/AllJobs";
+
 export default function App() {
   return (
     <Routes>
@@ -34,6 +36,14 @@ export default function App() {
         element={
           <ProtectedRoute>
             <Pinboard />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/all-jobs"
+        element={
+          <ProtectedRoute>
+            <AllJobs />
           </ProtectedRoute>
         }
       />

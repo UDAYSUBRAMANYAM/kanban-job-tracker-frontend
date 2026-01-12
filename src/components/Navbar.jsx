@@ -36,7 +36,16 @@ export default function Navbar() {
             Jobs
           </button>
         </li>
-
+        
+        <li className="nav-item">
+          <button
+            className={linkClass("/all-jobs")}
+            onClick={() => navigate("/all-jobs")}
+          >
+            All Jobs
+          </button>
+        </li>
+        
         <li className="nav-item">
           <button
             className={linkClass("/pinboard")}
